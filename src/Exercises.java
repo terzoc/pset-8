@@ -32,9 +32,13 @@ public class Exercises {
 	}
 
 	public int difference(int[] numbers) {
-		// write your code here
+		if (numbers == null || numbers.length < 1) {
+			return -1;
+		}
+		int difference = -1;
+		
 
-		return -1;		// default return value to ensure compilation
+		return differnce;		// default return value to ensure compilation
 	}
 
 	public double biggest(double[] numbers) {
