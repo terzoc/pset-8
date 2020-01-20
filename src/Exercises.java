@@ -64,7 +64,20 @@ public class Exercises {
 			return -1;
 		}
 
-		return -1;		// default return value to ensure compilation
+		int middle = (int)(Math.ceil(numbers.length / 2));
+		double max = -1;
+
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] < 0) {
+					return -1;
+				}
+
+				if ((i == 0 || i == numbers.length - 1 || i == middle) && numbers[i] > max) {
+					max = numbers[i];
+				}
+			}
+
+		return max;		// default return value to ensure compilation
 	}
 
 	public String[] middle(String[] values) {
