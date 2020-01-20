@@ -85,7 +85,16 @@ public class Exercises {
 			return new String[0];
 		}
 
-		return null;	// default return value to ensure compilation
+		for (int i = 0; i < values.length; i++) {
+			if (values[i] == null) {
+				return new String[0];
+			}
+		}
+
+		int middle = (int)(Math.ceil(values.length / 2));
+		String[] middles = {values[middle - 1], values[middle], values[middle + 1]};
+
+		return middles;	// default return value to ensure compilation
 	}
 
 	public boolean increasing(int[] numbers) {
