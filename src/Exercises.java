@@ -13,7 +13,9 @@ public class Exercises {
 	}
 
 	public String[] endsMeet(String[] values, int n) {
-		// write your code here
+		if (values == null || values.length < n || n <= 0) {
+			return new String[0];
+		}
 
 		return null;	// default return value to ensure compilation
 	}
