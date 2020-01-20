@@ -81,7 +81,9 @@ public class Exercises {
 	}
 
 	public String[] middle(String[] values) {
-		// write your code here
+		if (values == null || values.length < 3 || values.length % 2 == 0) {
+			return new String[0];
+		}
 
 		return null;	// default return value to ensure compilation
 	}
