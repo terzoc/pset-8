@@ -9,7 +9,7 @@ public class Exercises {
 			return true;
 		}
 
-		return false;	// default return value to ensure compilation
+		return false;	
 	}
 
 	public String[] endsMeet(String[] values, int n) {
@@ -28,7 +28,7 @@ public class Exercises {
 			j++;
 		}
 
-		return combined;	// default return value to ensure compilation
+		return combined;
 	}
 
 	public int difference(int[] numbers) {
@@ -56,7 +56,7 @@ public class Exercises {
 
 		int differnce = max-min;
 
-		return differnce;		// default return value to ensure compilation
+		return differnce;
 	}
 
 	public double biggest(double[] numbers) {
@@ -77,7 +77,7 @@ public class Exercises {
 				}
 			}
 
-		return max;		// default return value to ensure compilation
+		return max;
 	}
 
 	public String[] middle(String[] values) {
@@ -94,7 +94,7 @@ public class Exercises {
 		int middle = (int)(Math.ceil(values.length / 2));
 		String[] middles = {values[middle - 1], values[middle], values[middle + 1]};
 
-		return middles;	// default return value to ensure compilation
+		return middles;
 	}
 
 	public boolean increasing(int[] numbers) {
