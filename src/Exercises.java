@@ -9,7 +9,7 @@ public class Exercises {
 			return true;
 		}
 
-		return false;	
+		return false;
 	}
 
 	public String[] endsMeet(String[] values, int n) {
@@ -98,9 +98,19 @@ public class Exercises {
 	}
 
 	public boolean increasing(int[] numbers) {
-		// write your code here
+		if (numbers == null || numbers.length < 3) {
+		return false;
+	}
 
-		return false;	// default return value to ensure compilation
+	int j = 0;
+	int currentNum = -1;
+	for (int i = 1; i < numbers.length-1; i++) {
+			if (numbers[i-1] < numbers[i] && numbers[i] < numbers [i+1]) {
+				return true;
+			}
+	}
+
+		return false;
 	}
 
 	public boolean everywhere(int[] numbers, int x) {
