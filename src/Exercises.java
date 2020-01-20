@@ -102,8 +102,6 @@ public class Exercises {
 		return false;
 	}
 
-	int j = 0;
-	int currentNum = -1;
 	for (int i = 1; i < numbers.length-1; i++) {
 			if (numbers[i-1] < numbers[i] && numbers[i] < numbers [i+1]) {
 				return true;
