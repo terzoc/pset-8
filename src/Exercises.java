@@ -107,6 +107,7 @@ public class Exercises {
 				return true;
 			}
 	}
+
 		return false;
 	}
 
@@ -152,13 +153,31 @@ public class Exercises {
 			}
 		}
 
-		return false;	// default return value to ensure compilation
+		return false;
 	}
 
 	public boolean balance(int[] numbers) {
-		// write your code here
+		if (numbers == null || numbers.length < 2) {
+			return false;
+		}
 
-		return false;	// default return value to ensure compilation
+		for (int i = 0; i < numbers.length - 1; i++) {
+			int sum1 = 0;
+			int sum2 = 0;
+
+			for (int j = i; j >= 0; j--) {
+				sum1 += numbers[j];
+			}
+
+			for (int b = i + 1; b < numbers.length; b++) {
+				sum2 += numbers[b];
+			}
+
+			if (sum1 == sum2) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public int clumps(String[] values) {
